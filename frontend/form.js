@@ -10,7 +10,7 @@ function registrar_documento()
     let correo = document.getElementById("correo").value;
     let contrasena = document.getElementById("contrasena").value;
 
-    window.location.href = "agregarUsuario/";
+    window.location.href = `agregarUsuario/${nombre}/${apellido}/${telefono}/${correo}/${contrasena}`
 }
 
 function consultar_documento(){
