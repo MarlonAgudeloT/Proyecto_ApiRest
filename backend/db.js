@@ -25,4 +25,11 @@ const crear_documentos = async (nombre, apellido, telefono, correo, contrasena) 
     })
     await documento.save();
 }
-export {crear_documentos};
+
+let consultar_documentos = async () =>{
+    let documentos = await usuarios_modelo.find();
+    return documentos;
+   // console.log(documentos);
+}
+
+export {crear_documentos,consultar_documentos}

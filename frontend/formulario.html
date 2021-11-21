@@ -9,24 +9,24 @@
 </head>
 <body>
 
-    <form>
+    <form action = "/agregarUsuario" method = "post" >
         <label for="">Nombre
-            <input type="text" name="" id="nombre">
+            <input type="text"  id="nombre" name="name">
         </label>
         <label for="">Apellido
-            <input type="text" name="" id="apellido">
+            <input type="text" id="apellido"  name="lastname">
         </label>
         <label for="">Telefono
-            <input type="text" name="" id="telefono">
+            <input type="text"  id="telefono" name="phone">
         </label>
         <label for="">Correo
-            <input type="text" name="" id="correo">
+            <input type="text"  id="correo" name="email">
         </label>
         <label for="">Contraseña
-            <input type="text" name="" id="contrasena">
+            <input type="text" name="password" id="contrasena">
         </label>
-        <button id ="registrar">Registrar</button>
-        <button id ="consultar">Consultar</button>
+        <button type = "submit" id ="registrar">Registrar</button>
+        <button type = "button" id ="consultar">Consultar</button>
     </form>
     <script src="./form.js" type ="module"></script>
 </body>

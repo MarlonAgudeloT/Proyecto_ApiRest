@@ -1,5 +1,5 @@
 document.getElementById("registrar").addEventListener('click',registrar_documento)
-document.getElementById("consultar").addEventListener('click',consultar_documento)
+document.getElementById("consultar").addEventListener('click',consultar_documentos)
 
 
 function registrar_documento()
@@ -13,6 +13,6 @@ function registrar_documento()
     window.location.href = `agregarUsuario/${nombre}/${apellido}/${telefono}/${correo}/${contrasena}`
 }
 
-function consultar_documento(){
-
+function consultar_documentos(){
+    window.location.href = "consultarDocumentos/"
 }
